@@ -52,3 +52,4 @@ if __name__ == "__main__":
     print("GRAPH 2\n")
     print_SCC_order_sinks_sources()
     print_SCC_connections()
+    print("GRAPH 3\n")
