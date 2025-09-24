@@ -58,13 +58,13 @@ def print_SCC_connections_graph3():
 
 
 if __name__ == "__main__":
-    print("========GRAPH 1========\n")
+    print("\n========GRAPH 1========")
     print_table()
     print_sources_sinks()
     print_topological_ordering()
-    print("========GRAPH 2========\n")
+    print("\n========GRAPH 2========")
     print_SCC_order_sinks_sources_graph2()
     print_SCC_connections_graph2()
-    print("========GRAPH 3========\n")
+    print("\n========GRAPH 3========")
     print_SCC_order_sinks_sources_graph3()
     print_SCC_connections_graph3()
