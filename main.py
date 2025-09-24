@@ -29,7 +29,7 @@ def print_topological_ordering():
 
 def print_SCC_order_sinks_sources_graph2():
     print("\nSCC ORDER, SINK AND SOURCE SCCS, AND MINIMUM EDGES TO MAKE GRAPH STRONGLY CONNECTED")
-    print("Order: A; B; C,D,F,J; E; G,H,I")
+    print("Order: G,H,I; C,D,F,J; A; E; B")
     print("Sources: B; E")
     print("Sinks: C,D,F,J; G,H,I")
     print("Minimum edges: 2")
@@ -41,10 +41,12 @@ def print_SCC_connections_graph2():
     print("A -> C,D,F,J")
     print("A -> G,H,I")
     print("E -> G,H,I")
+    print("B -> G,H,I")
+    print("G,H,I -> C,D,F,J")
 
 def print_SCC_order_sinks_sources_graph3():
     print("\nSCC ORDER, SINK AND SOURCE SCCS, AND MINIMUM EDGES TO MAKE GRAPH STRONGLY CONNECTED")
-    print("Order: A,B,E; C; D,F,G,H,I")
+    print("Order: D,F,G,H,I; C; A,B,E")
     print("Sources: A,B,E")
     print("Sinks: D,F,G,H,I")
     print("Minimum edges: 1")
