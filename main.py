@@ -44,17 +44,16 @@ def print_SCC_connections_graph2():
 
 def print_SCC_order_sinks_sources_graph3():
     print("\nSCC ORDER, SINK AND SOURCE SCCS, AND MINIMUM EDGES TO MAKE GRAPH STRONGLY CONNECTED")
-    print("Order: A,B,E; C; D,G,H,I; F")
-    print("Sources: A; B; E")
-    print("Sinks: F")
+    print("Order: A,B,E; C; D,F,G,H,I")
+    print("Sources: A,B,E")
+    print("Sinks: D,F,G,H,I")
     print("Minimum edges: 1")
 
 def print_SCC_connections_graph3():
     print("\nSCC CONNECTIONS")
     print("A,B,E -> C")
-    print("A,B,E -> D,G,H,I")
-    print("C -> F")
-    print("D,G,H,I -> F")
+    print("A,B,E -> D,F,G,H,I")
+    print("C -> D,F,G,H,I")
 
 
 if __name__ == "__main__":
