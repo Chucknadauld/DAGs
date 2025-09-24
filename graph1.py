@@ -11,7 +11,6 @@ G.add_edges_from([('A', 'C'), ('B', 'C'), ('C', 'D'), ('C', 'E'), ('D', 'F'), ('
 
 plt.figure(figsize=(20, 8))
 
-# Create hierarchical layout manually to match the image
 pos = {
     'A': (0, 1),
     'B': (0, -1),
@@ -30,6 +29,6 @@ plt.title("Directed Graph", fontsize=18, fontweight='bold')
 plt.axis('off')
 plt.tight_layout()
 
-plt.savefig('directed_graph.png', dpi=300, bbox_inches='tight')
+plt.savefig('graph1.png', dpi=300, bbox_inches='tight')
 print("Graph saved as 'directed_graph.png' in the project root")
-plt.close()  # Close the figure to free memory
+plt.close()
