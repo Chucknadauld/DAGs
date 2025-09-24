@@ -10,9 +10,10 @@ G.add_nodes_from(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])
 # Add edges (directed connections)
 G.add_edges_from([('A', 'C'), ('B', 'C'), ('C', 'D'), ('C', 'E'), ('D', 'F'), ('E', 'F'), ('F', 'G'), ('F', 'H')])
 
+# Visualize the graph with hierarchical layout
 plt.figure(figsize=(20, 8))
 
-# Create hierarchical layout manually
+# Create hierarchical layout manually to match the image
 pos = {
     'A': (0, 1),
     'B': (0, -1),
