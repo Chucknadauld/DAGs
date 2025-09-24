@@ -27,29 +27,44 @@ def print_topological_ordering():
     print("Ordering: B,A,C,E,D,F,H,G")
     print("Number: 8")
 
-def print_SCC_order_sinks_sources():
+def print_SCC_order_sinks_sources_graph2():
     print("\nSCC ORDER, SINK AND SOURCE SCCS, AND MINIMUM EDGES TO MAKE GRAPH STRONGLY CONNECTED")
     print("Order: A; B; C,D,F,J; E; G,H,I")
     print("Sources: B; E")
     print("Sinks: C,D,F,J; G,H,I")
     print("Minimum edges: 2")
 
-def print_SCC_connections():
+def print_SCC_connections_graph2():
     print("\nSCC CONNECTIONS")
-    print("B->A")
-    print("E->A")
-    print("A->C,D,F,J")
-    print("A->G,H,I")
-    print("E->G,H,I")
+    print("B -> A")
+    print("E -> A")
+    print("A -> C,D,F,J")
+    print("A -> G,H,I")
+    print("E -> G,H,I")
 
+def print_SCC_order_sinks_sources_graph3():
+    print("\nSCC ORDER, SINK AND SOURCE SCCS, AND MINIMUM EDGES TO MAKE GRAPH STRONGLY CONNECTED")
+    print("Order: A,B,E; C; D,G,H,I; F")
+    print("Sources: A; B; E")
+    print("Sinks: F")
+    print("Minimum edges: 1")
+
+def print_SCC_connections_graph3():
+    print("\nSCC CONNECTIONS")
+    print("A,B,E -> C")
+    print("A,B,E -> D,G,H,I")
+    print("C -> F")
+    print("D,G,H,I -> F")
 
 
 if __name__ == "__main__":
-    print("GRAPH 1\n")
+    print("========GRAPH 1========\n")
     print_table()
     print_sources_sinks()
     print_topological_ordering()
-    print("GRAPH 2\n")
-    print_SCC_order_sinks_sources()
-    print_SCC_connections()
-    print("GRAPH 3\n")
+    print("========GRAPH 2========\n")
+    print_SCC_order_sinks_sources_graph2()
+    print_SCC_connections_graph2()
+    print("========GRAPH 3========\n")
+    print_SCC_order_sinks_sources_graph3()
+    print_SCC_connections_graph3()
