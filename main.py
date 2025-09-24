@@ -18,5 +18,13 @@ def print_table():
         print(f"{row[0]:<6} | {row[1]:<6} | {row[2]:<6}")
     print("=" * 30)
 
+def print_sources():
+    print("\nSources: A, B")
+    
+def print_sinks():
+    print("\nSinks: G, H")
+
 if __name__ == "__main__":
     print_table()
+    print_sources()
+    print_sinks()
