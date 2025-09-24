@@ -25,7 +25,7 @@ def print_sinks():
     print("\nSinks: G, H")
 
 def print_topological_ordering():
-    print("\nTopological Ordering: B, A, C, E, D, F, H, G")
+    print("\nTopological Ordering: B,A,C,E,D,F,H,G")
     print("Number of Orderings: 8")
 
 if __name__ == "__main__":
