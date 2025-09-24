@@ -24,7 +24,12 @@ def print_sources():
 def print_sinks():
     print("\nSinks: G, H")
 
+def print_topological_ordering():
+    print("\nTopological Ordering: B, A, C, E, D, F, H, G")
+    print("Number of Orderings: 8")
+
 if __name__ == "__main__":
     print_table()
     print_sources()
     print_sinks()
+    print_topological_ordering()
