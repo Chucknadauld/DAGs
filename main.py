@@ -1,34 +1,22 @@
-import networkx as nx
-import matplotlib.pyplot as plt
+# Table structure for pre and post numbers
+table = [
+    ['Node', 'Pre', 'Post'],
+    ['A', '1', '14'],
+    ['B', '15', '16'],
+    ['C', '2', '13'],
+    ['D', '3', '10'],
+    ['E', '11', '12'],
+    ['F', '4', '9'],
+    ['G', '5', '6'],
+    ['H', '7', '8']
+]
 
-# Create a directed graph
-G = nx.DiGraph()
+def print_table():
+    print("Pre and Post Numbers Table")
+    print("=" * 30)
+    for row in table:
+        print(f"{row[0]:<6} | {row[1]:<6} | {row[2]:<6}")
+    print("=" * 30)
 
-# Add nodes
-G.add_nodes_from(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])
-
-# Add edges (directed connections)
-G.add_edges_from([('A', 'C'), ('B', 'C'), ('C', 'D'), ('C', 'E'), ('D', 'F'), ('E', 'F'), ('F', 'G'), ('F', 'H')])
-
-# Visualize the graph with hierarchical layout
-plt.figure(figsize=(20, 8))
-
-# Create hierarchical layout manually to match the image
-pos = {
-    'A': (0, 1),
-    'B': (0, -1),
-    'C': (2, 0),
-    'D': (4, 1),
-    'E': (4, -1),
-    'F': (6, 0),
-    'G': (8, 1),
-    'H': (8, -1)
-}
-
-nx.draw(G, pos=pos, with_labels=True, node_color='lightblue', 
-        node_size=1500, font_size=16, font_weight='bold', 
-        arrows=True, arrowsize=20, edge_color='gray')
-plt.title("Directed Graph", fontsize=18, fontweight='bold')
-plt.axis('off')
-plt.tight_layout()
-plt.show()
+if __name__ == "__main__":
+    print_table()
