@@ -31,7 +31,7 @@ def print_SCC_order_sinks_sources_graph2():
     print("\nSCC ORDER, SINK AND SOURCE SCCS, AND MINIMUM EDGES TO MAKE GRAPH STRONGLY CONNECTED")
     print("Order: C,D,F,J; G,H,I; A; E; B")
     print("Sources: B; E")
-    print("Sinks: C,D,F,J; G,H,I")
+    print("Sinks: C,D,F,J")
     print("Minimum edges: 2")
 
 def print_SCC_connections_graph2():
